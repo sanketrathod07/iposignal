@@ -1,4 +1,7 @@
-const BASE = "/api";
+const API_HOST = import.meta.env.VITE_API_URL 
+  || (import.meta.env.DEV ? "" : "https://iposignal-backend.onrender.com");
+
+const BASE = `${API_HOST.replace(/\/$/, "")}/api`;
 
 function getToken() {
   return localStorage.getItem("ipo_cc_token");
