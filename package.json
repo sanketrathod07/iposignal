@@ -1,0 +1,13 @@
+{
+  "name": "iposignal-command-center",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IPOSignal - Real-time Indian IPO Intelligence & GMP Tracker",
+  "scripts": {
+    "start": "npm start --prefix backend",
+    "dev": "npm start --prefix backend",
+    "build": "npm install --prefix backend",
+    "build:backend": "npm install --prefix backend",
+    "build:frontend": "npm install --prefix frontend && npm run build --prefix frontend"
+  }
+}
